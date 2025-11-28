@@ -38,6 +38,8 @@ Projenin birkaç önemli ekranı aşağıdadır.
 ### 🔹 Kitap Detay Sayfası
 ![Kitap Detay](screenshots/Ekran%20Resmi%202025-11-28%2014.32.17.png)
 
+### 🔹 Filtreleme Sayfası
+![Filtreleme](screenshots/Ekran%20Resmi%202025-11-28%2014.46.42.png)
 
 ### 🔹 Giriş Yap
 ![Giriş Yap](screenshots/Ekran%20Resmi%202025-11-28%2014.26.38.png)

@@ -54,7 +54,7 @@ KULLANILAN TEKNOLOJİLER
 - Django Authentication System
 - Custom Template & UI Styling
 
-💡 Kurulum
+KURULUM
 - Projeyi yerelde çalıştırmak için:
 - git clone https://github.com/ebrurazi/NebraWeb.git
 - cd NebraWeb
@@ -66,9 +66,9 @@ KULLANILAN TEKNOLOJİLER
 Ardından tarayıcıda:
 - http://127.0.0.1:8000/
 
-✨ GELİŞTİRİCİ
-Ebru RAZİ - Developer
-🌐 GitHub: https://github.com/ebrurazi
-🐦 Medium: https://medium.com/@ebrurazi
-💼 LinkedIn: https://www.linkedin.com/in/ebru-razi
-🌟 Nebra: Her kitap bir yıldız, her hikâye bir iz.
+GELİŞTİRİCİ
+- Ebru RAZİ
+- 🌐 GitHub: https://github.com/ebrurazi
+- 🐦 Medium: https://medium.com/@ebrurazi
+- 💼 LinkedIn: https://www.linkedin.com/in/ebru-razi
+- 🌟 Nebra: Her kitap bir yıldız, her hikâye bir iz.

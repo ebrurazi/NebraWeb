@@ -4,20 +4,21 @@ Nebra, okuduğun kitapları takip edebileceğin, notlarını kaydedebileceğin v
 
 Django + Bootstrap ile geliştirilmiş olup, sade ve kullanıcı dostu bir deneyim sunar.
 
-🚀 Özellikler
-📖 Kitap ekleme, düzenleme, silme
-⭐ Kitaplara puan verme
-📝 Not ekleme & güncelleme
-💛 Favorilere ekleme sistemi
-🔎 Arama ve filtreleme
-👤 Kullanıcı kayıt–giriş sistemi
-🌙 Modern, gece temalı arayüz
-📂 Tamamen kişisel kitap arşivi oluşturma
-🖼️ Ekran Görüntüleri
+ÖZELLİKLER
+- Kitap ekleme, düzenleme, silme
+- Kitaplara puan verme
+- Not ekleme & güncelleme
+- Favorilere ekleme sistemi
+- Arama ve filtreleme
+- Kullanıcı kayıt–giriş sistemi
+- Modern, gece temalı arayüz
+- Tamamen kişisel kitap arşivi oluşturma
+- Ekran Görüntüleri
+  
 Projenin birkaç önemli ekranı aşağıdadır.
 /screenshots/ klasörüne eklediğin görselleri doğru şekilde gösterecek.
-### 🔹 Ana Sayfa
-![Ana Sayfa](screenshots/Ekran%20Resmi%202025-11-28%2014.26.19.png)
+### 🔹 Favoriler Sayfası
+![Favoriler Sayfası](screenshots/Ekran%20Resmi%202025-11-28%2014.26.19.png)
 
 ### 🔹 Kitap Silme Onayı
 ![Kitap Silme](screenshots/Ekran%20Resmi%202025-11-28%2014.23.44.png)
@@ -28,21 +29,29 @@ Projenin birkaç önemli ekranı aşağıdadır.
 ### 🔹 Kitap Eklendikten Sonra
 ![Kitap Eklendi](screenshots/Ekran%20Resmi%202025-11-28%2014.26.09.png)
 
-### 🔹 Favoriler Sayfası
-![Favoriler](screenshots/Ekran%20Resmi%202025-11-28%2014.26.25.png)
+### 🔹 Kullanıcı Giriş Yapmadığında Ekran
+![Kullanıcı Giriş Yapmadığında Ekran](screenshots/Ekran%20Resmi%202025-11-28%2014.26.25.png)
 
-### 🔹 Çıkış Yapıldığında Ana Sayfa
-![Çıkış Yapıldı](screenshots/Ekran%20Resmi%202025-11-28%2014.26.38.png)
+### 🔹 Kitabı Düzenle Sayfası
+![Kitabı Düzenle](screenshots/Ekran%20Resmi%202025-11-28%2014.31.11.png)
 
-### 🔹 Giriş Yap Ekranı
-![Giriş](screenshots/Ekran%20Resmi%202025-11-28%2014.26.46.png)
+### 🔹 Kitap Detay Sayfası
+![Kitap Detay](screenshots/Ekran%20Resmi%202025-11-28%2014.32.17.png)
 
-🛠️ Kullanılan Teknolojiler
+
+### 🔹 Giriş Yap
+![Giriş Yap](screenshots/Ekran%20Resmi%202025-11-28%2014.26.38.png)
+
+### 🔹 Kayıt Ol
+![Kayıt Ol](screenshots/Ekran%20Resmi%202025-11-28%2014.26.46.png)
+
+KULLANILAN TEKNOLOJİLER
 Python / Django
 HTML / CSS / Bootstrap
 SQLite
 Django Authentication System
 Custom Template & UI Styling
+
 💡 Kurulum
 Projeyi yerelde çalıştırmak için:
 git clone https://github.com/ebrurazi/NebraWeb.git
@@ -57,10 +66,9 @@ python manage.py migrate
 python manage.py runserver
 Ardından tarayıcıda:
 http://127.0.0.1:8000/
-✨ Geliştirici
-Ebru Razi
-📍 Türkiye
-💼 SAP ABAP Developer & Backend Developer
+
+✨ GELİŞTİRİCİ
+Ebru RAZİ - Developer
 🌐 GitHub: https://github.com/ebrurazi
 🐦 Medium: https://medium.com/@ebrurazi
 💼 LinkedIn: https://www.linkedin.com/in/ebru-razi

@@ -48,26 +48,23 @@ Projenin birkaç önemli ekranı aşağıdadır.
 ![Kayıt Ol](screenshots/Ekran%20Resmi%202025-11-28%2014.26.46.png)
 
 KULLANILAN TEKNOLOJİLER
-Python / Django
-HTML / CSS / Bootstrap
-SQLite
-Django Authentication System
-Custom Template & UI Styling
+- Python / Django
+- HTML / CSS / Bootstrap
+- SQLite
+- Django Authentication System
+- Custom Template & UI Styling
 
 💡 Kurulum
-Projeyi yerelde çalıştırmak için:
-git clone https://github.com/ebrurazi/NebraWeb.git
-cd NebraWeb
-
-python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
-
-pip install -r requirements.txt
-
-python manage.py migrate
-python manage.py runserver
+- Projeyi yerelde çalıştırmak için:
+- git clone https://github.com/ebrurazi/NebraWeb.git
+- cd NebraWeb
+- python -m venv venv
+- source venv/bin/activate   # Windows: venv\Scripts\activate
+- pip install -r requirements.txt
+- python manage.py migrate
+- python manage.py runserver
 Ardından tarayıcıda:
-http://127.0.0.1:8000/
+- http://127.0.0.1:8000/
 
 ✨ GELİŞTİRİCİ
 Ebru RAZİ - Developer

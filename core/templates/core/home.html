@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        {% load static %}
+        <meta charset="utf-8" />
+        <title>Nebra - Her sayfa bir yıldız</title>
+        <meta name ="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="{% static 'core/style.css' %}">
+    </head>
+    <body>
+        <!-- UST HEADER-->
+        <header class="main-header">
+            <div class="header-left">
+                <img src="{% static 'core/Nebralogo.png' %}" alt="Nebra Logo" class="logo-img">
+                <h1 class="brand-title">Nebra ✨</h1>
+            </div>
+            <nav class="header-nav">
+                <a href="{% url 'home' %}" class="nav-link {% if not filter_type and not q %}active{% endif %}">🏠 Ana Sayfa</a>
+                <a href="{% url 'add_book' %}" class="nav-link">📖 Yeni Kitap Ekle</a>
+                <a href="?filter=favorites" class="nav-link {% if filter_type == 'favorites' %}active{% endif %}">⭐ Favoriler</a>
+
+                {% if user.is_authenticated %}
+                    <span class="nav-link">👋 {{ user.username }}</span>
+                    <a href="{% url 'logout' %}" class="nav-link">🚪 Çıkış</a>
+                {% else %}
+                   <a href="{% url 'login' %}" class="nav-link">🔐 Giriş</a>
+                   <a href="{% url 'signup' %}" class="nav-link">🌙 Kayıt Ol</a>
+                {% endif %}
+             
+            </nav>
+        </header>
+
+        <!-- ANA ICERİK-->
+
+        <main class="wrap">
+
+            {% if messages %}
+                <div class="toast-wrap">
+                    {% for message in messages %}
+                    <div class="toast toast-{{ message.tags }}">{{ message }}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+            <p class="tagline">Her sayfa bir yıldız; her hikaye bir iz.</p>
+
+            {% if not user.is_authenticated and not filter_type and not q %}
+                <div class="card">
+                    <p>📚 Kitaplarını kaydetmek için önce giriş veya kayıt ol 💫</p>
+                    <a href="{% url 'login' %}" class="btn btn-sm">🔐 Giriş Yap</a>
+                    <a href="{% url 'signup' %}" class="btn btn-sm">🔐 Kayıt Ol</a>
+                </div>
+            {% endif %}
+
+            <div class="card intro-card">
+                <h3>Hoş geldin Ebruli ✨</h3>
+                <p>Okuduğun kitapları, notlarını ve yıldızlarını burada biriktir.</p>
+            </div>
+
+            <div class="card book-list">
+                <h3>📚 Okuduğum Kitaplar</h3>
+
+                <form method="get" class="search-form">
+                    {% if filter_type == 'favorites' %}
+                        <input type="hidden" name="filter" value="favorites">
+                    {% endif %}
+                    <input type="text" name="q" placeholder="Başlık ve yazara göre ara..." value="{{ q }}">
+                    <button type="submit" class="btn btn-sm">Ara</button> 
+                </form>
+                <p class="muted">
+                    Toplam: {{ books|length }} kitap
+                    {% if filter_type == 'favorites' %} • Yalnızca ⭐5 Favoriler{% endif %}
+                </p>
+                {% if books %}
+                    <ul>
+                        {% for book in books %}
+                            <li>
+                                <div>
+                                    <strong>
+                                        <a href="{% url 'book_detail' book.pk %}" class="book-link">{{ book.title }}</a>
+                                    </strong>
+                                    {% if book.author %}<span class="meta">- {{ book.author}}</span>{% endif %}
+                                    {% if book.rating %}<span class="stars"> ⭐ {{ book.rating}}/5</span>{% endif %}
+                                    {% if book.notes %} 
+                                        <p class="note-preview">{{ book.notes|truncatechars:120}}</p>
+                                    {% endif %}
+                                </div>
+
+                                <div class="book-actions">
+                                    <a href="{% url 'edit_book' book.pk %}" class="action-link">Düzenle</a>
+                                    <a href="{% url 'delete_book' book.pk %}" class="action-link action-delete">Sil</a>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p>Henüz kitap yok. İlkini ekleyelim mi? -> <a class="btn" href="{% url 'add_book' %}">📖 Yeni Kitap Ekle</a></p>
+                {% endif %}
+            </div>
+        </main>
+    </body>
+</html>

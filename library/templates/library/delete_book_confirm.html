@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitabı Sil - Nebra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="{% static 'core/style.css' %}">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-left">
+            <img src="{% static 'core/Nebralogo.png' %}" alt="Nebra Logo" class="logo-img">
+            <h1 class="brand-title">Nebra ✨</h1>
+        </div>
+    </header>
+    <main class="wrap">
+        <div class="card">
+            <h3>✏️ Kitabı Sil</h3>
+            <p>"{{ book.title }}" adlı kitabı silmek istediğine emin mmisin?</p>
+
+            <form method="post" style="margin-top: 14px;">
+                {% csrf_token %}
+                <button type="submit" class="btn">Evet, sil</button>
+                <a href="{% url 'home' %}" class="btn" style="margin-left: 8px;">Vazgeç</a>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

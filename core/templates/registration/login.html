@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Giriş Yap - Nebra</title>
+    <link rel="stylesheet" href="{% static 'core/style.css' %}">
+</head>
+
+<body>
+    <main class="wrap">
+        <div class="card">
+            <h3>🔐 Giriş Yap</h3>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn">Giriş Yap</button>
+            </form>
+
+            <p style="margin-top: 12px;">
+                Hesabın yok mu?
+                <a href="{% url 'signup' %}">Kayıt Ol</a>
+            </p>
+
+            <a href="{% url 'home' %}" class="btn btn-sm" style="margin-top: 8px; display: inline-block;">
+                Ana Sayfaya Dön
+            </a>
+        </div>
+    </main>
+</body>
+</html>

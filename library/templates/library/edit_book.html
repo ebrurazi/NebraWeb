@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitabı Düzenle - Nebra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="{% static 'core/style.css' %}">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-left">
+            <img src="{% static 'core/Nebralogo.png' %}" alt="Nebra Logo" class="logo-img">
+            <h1 class="brand-title">Nebra ✨</h1>
+        </div>
+    </header>
+    <main class="wrap">
+        <div class="card">
+            <h3>✏️ Kitabı Düzenle</h3>
+            <p>{{ book.title }} - {{ book.author }}</p>
+
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn">Kaydet</button>
+            </form>
+            <p style="margin-top: 10px;">
+                <a href="{% url 'home' %}" class="btn btn-sm" style="margin-top: 12px; display: inline-block;">Ana sayfaya dön</a>
+            </p>
+        </div>
+    </main>
+</body>
+</html>

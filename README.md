@@ -67,8 +67,8 @@ Ardından tarayıcıda:
 - http://127.0.0.1:8000/
 
 GELİŞTİRİCİ
-- Ebru RAZİ
-- 🌐 GitHub: https://github.com/ebrurazi
-- 🐦 Medium: https://medium.com/@ebrurazi
-- 💼 LinkedIn: https://www.linkedin.com/in/ebru-razi
+-  Ebru RAZİ
+-  GitHub: https://github.com/ebrurazi
+-  Medium: https://medium.com/@ebrurazi
+-  LinkedIn: https://www.linkedin.com/in/ebru-razi
 - 🌟 Nebra: Her kitap bir yıldız, her hikâye bir iz.

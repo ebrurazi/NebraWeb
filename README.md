@@ -68,7 +68,7 @@ Ardından tarayıcıda:
 
 GELİŞTİRİCİ
 -  Ebru RAZİ
--  GitHub: https://github.com/ebrurazi
--  Medium: https://medium.com/@ebrurazi
--  LinkedIn: https://www.linkedin.com/in/ebru-razi
+- GitHub: [https://github.com/ebrurazi](https://github.com/ebrurazi)
+- Medium: [https://medium.com/@ebrurazii](https://medium.com/@ebrurazii)
+- LinkedIn: [https://www.linkedin.com/in/ebru-razi](https://www.linkedin.com/in/ebrurazi/)
 - 🌟 Nebra: Her kitap bir yıldız, her hikâye bir iz.
